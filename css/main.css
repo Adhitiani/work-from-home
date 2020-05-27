@@ -177,15 +177,15 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+
 }
 
 header figure {
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  margin-right: 1em;
+
 }
 
 .header-divider {
@@ -196,12 +196,11 @@ header figure {
 }
 
 header nav {
-  width: 70%;
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -209,11 +208,12 @@ header nav {
 header nav ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header nav ul li {
-  font-size: 1.125em;
+  font-size: 1em;
+  margin: 0.5em;
 }
 
 footer {
@@ -282,7 +282,7 @@ footer .copyright {
 }
 
 .hero-area img {
-  margin-left: 30%;
+  margin-left: 35%;
   height: 300px;
 
 
@@ -292,14 +292,14 @@ footer .copyright {
 button {
   border-radius: 10px;
   padding: 1em;
-  background-color: #FFCCE6;
-  color: black;
+  background-color: #4756DF;
   width: 15em;
-  font-weight: bold;
-  
 }
 
 
+button a {
+  color: white;
+}
 
 /* ==========================================================================
    Print styles.
