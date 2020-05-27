@@ -154,7 +154,12 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  text-align: center;
+  padding: 1em;
 
 }
 
@@ -172,7 +177,7 @@ header {
   padding: 15px 0;
 }
 
-header .content-wrapper {
+header.content-wrapper {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -186,13 +191,6 @@ header figure {
   align-items: center;
   margin-right: 1em;
 
-}
-
-.header-divider {
-  background: #3a3a3a;
-  height: 1px;
-  width: 100%;
-  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -227,9 +225,13 @@ footer p {
   margin: 0;
 }
 
-footer .content-wrapper {
+footer.content-wrapper {
   width: 55%;
   margin: 50px 0;
+}
+
+.footer-content {
+  width: 100%;
 }
 
 footer .contact {
@@ -240,10 +242,12 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
+  width: 50%;
 }
 
 footer .social-icons p {
-  background-color:  #FFCCE6;
+  background-color:  #3EC1F3;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -278,13 +282,12 @@ footer .copyright {
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
-
+  margin: 0 auto;
 }
 
 .hero-area img {
-  margin-left: 35%;
-  height: 300px;
-
+width: 100%;
+height: 100%;
 
 
 }
@@ -292,13 +295,72 @@ footer .copyright {
 button {
   border-radius: 10px;
   padding: 1em;
-  background-color: #4756DF;
+  background-color: #3EC1F3;
   width: 15em;
+  margin: 0 auto;
 }
 
 
 button a {
   color: white;
+}
+
+/* Aside */
+aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.work {
+  max-width: 300px;
+  padding: 1em;
+  overflow: hidden;
+  border: 1px solid rgba(83, 98, 124, 0.07);
+  margin-bottom: 1.5em;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 2px 12px 0px;
+
+}
+
+.work img {
+  width: 100%;
+  max-height: 200px;
+}
+
+.work p {
+  text-align: left;
+  }
+
+  .work p a {
+    color: #3EC1F3;
+
+    }
+
+p.all-works {
+  text-align: right;
+  }
+
+.all-works a {
+  color: #3EC1F3;
+}
+
+/* skills */
+.skills {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+.skills-items {
+  width: 100%;
+}
+
+.skills h4 {
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
