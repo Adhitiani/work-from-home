@@ -143,9 +143,6 @@ p {
   line-height: 1.285;
 }
 
-img {
- width: 100%;
-}
 
 figure {
  margin: 0;
@@ -269,23 +266,34 @@ footer .copyright {
 .hero-area {
   min-height: 500px;
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  margin: 0;
-}
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1em;
+  }
 
 .hero-area h1 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+  text-align: center;
+
+}
+
+.hero-area img {
+  margin-left: 20%;
+
+
+
 }
 
 button {
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 1em;
   background-color: #FFCCE6;
   color: black;
+  width: 15em;
+  font-weight: bold;
 }
 
 
