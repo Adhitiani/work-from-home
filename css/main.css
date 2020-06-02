@@ -108,6 +108,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #545454;
   text-align: left;
+  font-weight: 300;
+  line-height: 1.5;
 
 }
 
@@ -125,23 +127,31 @@ a {
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.875em;
   margin: 0;
 }
 
-h3,
-h4 {
+h3  {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.125em;
-  margin: 20px 0;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 30px 0;
   color: #3EC1F3;
 }
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  margin: 20px 0;
+  color: #3EC1F3;
+
+}
+
 p {
-  font-size: .875em;
-  line-height: 1.285;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 
@@ -165,7 +175,6 @@ address {
 }
 
 span {
-  font-size: 1.25em;
   color: #3EC1F3;
 }
 
@@ -179,7 +188,7 @@ footer {
   flex-flow: row wrap;
 }
 
-header {
+header, footer {
   padding: 1em;
   background-color: #3EC1F3;
   color: #ffff
@@ -242,10 +251,15 @@ footer.content-wrapper {
 
 .footer-content {
   width: 100%;
+  color: #ffff;
 }
 
 footer .contact {
   margin-bottom: 50px;
+}
+
+.footer-content h3 {
+  color: #ffff;
 }
 
 footer .social-icons {
@@ -257,7 +271,7 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-  background-color:  #3EC1F3;
+  background-color:  #ffff;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -284,8 +298,8 @@ footer .copyright {
   justify-content: space-between;
   text-align: center;
   background-color: #ffff;
-  padding: 0 1em;
   margin-bottom: -2.5em;
+  padding: 3rem 1.5rem;
   }
 
 h1 {
@@ -305,8 +319,7 @@ h1 {
 .hero-area img {
 width: 100%;
 height: 100%;
-
-
+margin-top: 1em;
 
 }
 
@@ -334,7 +347,7 @@ aside {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  margin-top: 0;
+  margin-top: 3em;
 }
 .work {
   max-width: 300px;
@@ -370,21 +383,30 @@ p.all-works {
 }
 
 /* skills */
+
 .skills {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 50px;
   }
 
 .skills-items {
   width: 100%;
+  padding: 20px 30px 50px 30px;
 }
 
-.skills h4 {
+.skills h3, h4  {
   text-align: center;
   margin: 0 auto;
+}
+
+
+article:not(:last-child) {
+  margin-bottom: 4em; 
+  
 }
 
 /* ==========================================================================
