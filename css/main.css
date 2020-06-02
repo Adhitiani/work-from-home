@@ -411,6 +411,11 @@ article:not(:last-child) {
   
 }
 
+article img {
+  width: 140px;
+  height: 130px;
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
