@@ -186,7 +186,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: .875em;
+  padding: .5em;
   background-color: #3EC1F3;
   color: #ffff
 }
@@ -428,7 +428,7 @@ article img {
 
 button.skill-button {
   width: 10em;
-  margin: .875em;
+  margin: 1em;
 }
 
 /* ==========================================================================
