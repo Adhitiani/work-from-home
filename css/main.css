@@ -350,7 +350,8 @@ margin: 1em 0;
   margin: 1em 0 1em 0;
 }
 
-button {
+.button-hero,
+.skill-button  {
   border-radius: 10px;
   padding: 1em;
   background-color: #3EC1F3;
@@ -360,7 +361,8 @@ button {
 }
 
 
-button a {
+.button-hero a,
+.skill-button a {
   color: white;
 }
 
@@ -406,7 +408,7 @@ article img {
   padding: 10px;
 }
 
-button.skill-button {
+.skill-button {
   width: 15em;
   margin: 1em;
 }
@@ -429,6 +431,7 @@ button.skill-button {
 
   .row {
     margin: 8px -16px;
+    text-align: left;
   }
   
   /* Add padding BETWEEN each column */
@@ -464,13 +467,14 @@ button.skill-button {
   outline: none;
   padding: 5px;
   cursor: pointer;
-  color: #ffff;
+  color: #3EC1F3;
   width: 100px;
   font-size: 14px;
   justify-content: space-between;
   margin: 18px 2px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 5px;  
+  background-color: #ffff  ;
 }
 
 /* Add a grey background color on mouse-over */
@@ -480,8 +484,8 @@ button.skill-button {
 }
 
 .btn.active {
-  background-color:  rgb(237, 246, 252);
-  color: #3EC1F3;
+  background-color: #3EC1F3;;
+  color: #ffffff;
 }
 
 .work-menu {
