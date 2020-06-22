@@ -1,0 +1,214 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Adhit Homepage</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7aeb642c37.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  
+</head>
+
+<body>
+  <header>
+    <div class="content-wrapper">
+      <figure>
+        <a href="../index.html">
+          <img class="logo" src="../img\logo-a.svg" alt="logo adhit">
+        </a>
+      </figure>
+
+      <nav>
+        <ul>
+          <li class="selected"><a href="index.html">Portfolio</a></li>
+          <li><a href="about/index.html" target="_blank">About</a></li>
+          <li><a href="about/index.html" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+
+    <section class="work">
+      <div class="content-wrapper">
+        <div class="title">
+          <h3>Portfolio</h3>
+        </div>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('development')"> Development</button>
+          <button class="btn" onclick="filterSelection('design')">Design</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column development">
+            <article class="work-about">
+              <img src="../img/website1.png" alt="portfolio website" style="width:100%" />
+              <p> <span>My Portfolio Website</span></p>
+              <p class="skills-description">
+                My first portfolio website with HTML and CSS only. I'm always experimenting on making my portfolio website. It's like a never ending project.
+              </p>
+              <a href="#"> <span>View Live</span> </a>
+            </article>
+          </div>
+
+          <div class="column development">
+            <article class="work-about">
+              <img src="../img/website2.png" alt="portfolio website" style="width:100%" />
+              <p> <span>Unplugged Retreat</span></p>
+              <p class="skills-description">
+                A responsive website with multiple pages. I learn a lot about responsive website development while building this.
+              </p>
+              <a href="#"> <span>View Live</span> </a>
+            </article>
+          </div>
+
+          <div class="column development">
+            <article class="work-about">
+              <img src="../img/website3.png" alt="portfolio website" style="width:100%" />
+              <p> <span>Rogue Picking</span></p>
+              <p class="skills-description">
+                One page static website with column.
+              </p>
+              <a href="#"> <span>View Live</span> </a>
+            </article>
+          </div>
+
+          <div class="column design">
+            <article class="work-about">
+              <img src="../img/Charlotte.png" alt="portfolio website" style="width:100%" />
+              <p> <span>Charlotte Shoe Webshop</span></p>
+              <p class="skills-description">
+                My first mobile site design with Figma. I was having fun exploring what Figma can do.  
+              </p>
+              <a href="#"> <span>View Live</span> </a>
+            </article>
+          </div>
+
+          <!-- END GRID -->
+
+        </div>
+      </div>
+    </section>
+
+  </main> <!-- main wrapper -->
+
+  <footer>
+    <div class="content-wrapper">
+      <div class="footer-content">
+        <address class="contact">
+          <h3>Contact</h3>
+          <p>
+            adhitiani@gmail.com
+          </p>
+        </address>
+        <div class="social">
+          <h3>Social</h3>
+          <div class="social-icons">
+            <p>
+              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </p>
+            <p>
+              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+        </div>
+      </div> <!-- footer content ends -->
+    </div>
+    <!--footer content-wrapper ends-->
+    <div class="copyright">
+      <p>Copyright 2020 | Adhitiani Suzanthi</p>
+    </div>
+  </footer>
+
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        removeClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+      }
+    }
+    
+    function addClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function removeClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
