@@ -387,6 +387,7 @@ article {
   background-color: rgb(237, 246, 252);
   padding: 30px 20px;
   border-radius: 10px;
+  
 }
 
 .skills h3, h4  {
@@ -521,7 +522,7 @@ article img {
   height: 200px;
   background-color: #ffff;
   border-radius: 5px;
-  padding: 0;
+  padding: 5px;
   }
 }
 

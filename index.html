@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="hijab.svg">
   <!-- Place favicon.ico in the root directory -->
   <!-- Google Fonts -->
 
@@ -44,10 +44,11 @@
 
     <section class="hero-area">
       <div class="content-wrapper">
+        
+        <img src="img/wfh_6.svg" alt="work from home icon">
         <h1>Hi, I'm Adhit</h1>
         <p>I love to design pages and turn them into a beutiful and well functioning
           website. I also love teaching kids coding.</p>
-        <img src="img/wfh_5.png" alt="work from home icon">
         <button class="button-hero" type="button" name="button"><a href="portfolio/index.html">View Portfolio</a></button>
       </div>
     </section>
@@ -71,7 +72,7 @@
               <li>Webflow</li>
             </ul>
             <button class="skill-button"
-            type="button" name="button"><a href="#">View My Designs</a></button>
+            type="button" name="button" ><a href="portfolio/index.html" id="myDesignBtn">View My Designs</a></button>
           </article>
           </article>
           <article>
@@ -91,8 +92,7 @@
               <li>Visual Studio Code</li>
               <li>Git and GitHub</li>
             </ul>
-            <button class="skill-button"
-            type="button" name="button"><a href="#">View My Websites</a></button>
+            <button class="skill-button" onclick="filterSelection('development')"><a href="portfolio/index.html">View My Websites</a></button>
           </article>
           <article>
             <p class="fontawesome-icon">
@@ -151,6 +151,8 @@
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+ 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
